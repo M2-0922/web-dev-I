@@ -440,6 +440,34 @@ p {
 }
 ```
 
+### CSS Float
+
+CSS float is specified using float property.
+CSS float is used to float an element to the left or right of its container.
+Here are some examples of CSS float:
+
+```css
+p {
+  float: left;
+  /* float is floating an element to the left */
+}
+```
+
+```css
+p {
+  float: right;
+  /* float is floating an element to the right */
+}
+```
+
+```css
+p {
+  float: none;
+  /* float is removing the float of an element */
+}
+```
+
+
 # CSS Responsive Design
 
 Responsive design is a web design approach that makes web pages render well on a variety of devices and window or screen sizes.
@@ -589,8 +617,3 @@ Create a responsive design for desktop, table and mobile screen sizes using CSS 
   }
 }
 ```
-
-what is grid template areas in CSS Grid and which are the values of grid template areas?
-grid template areas is used to define the grid template areas.
-The values of grid template areas are the names of the grid areas.
-

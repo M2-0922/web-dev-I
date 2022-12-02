@@ -1,14 +1,31 @@
-.container {
-    display: grid;
-    /* display: grid is used to enable CSS grid */
-    grid-template-columns: repeat(4, 1fr);
-    
-    /* grid-template-columns: repeat(4, 1fr) is used to define the number of columns and the width of the columns */
-    grid-gap: 48px;
-    /* grid-gap: 10px is used to define the gap between the columns and the rows */
+.card{
+  border:1px solid black;
+  width: 240px;
+  height: 320px;
 }
-  .card{
-    border: 1px solid black;
-    height: 370px;
-    width: 240px;
+
+#card1{
+  background-color: yellow;
+}
+
+#card2{
+  background-color: blue;
+}
+
+#card3{
+  background-color: crimson;
+}
+
+p{
+  margin: 0;
+}
+#article-specific{
+  padding: 24px;
+  
+}
+html{
+  display: block;
+}
+body{
+  display: block;
 }
