@@ -1,4 +1,24 @@
-### CSS Basic
+# CSS Basic
+
+Routes;
+
+CSS pt 1: [CSS Syntax, Selector & Properties](#css-syntax)
+* CSS Selector: [CSS Selector](#css-selector)
+* CSS Properties: [CSS Properties](#css-properties)
+* CSS Units: [CSS Units](#css-units)
+* CSS Color: [CSS Color](#css-colors)
+* CSS Background: [CSS Background](#css-backgrounds)
+* CSS Border: [CSS Border](#css-border)
+* CSS Margin: [CSS Margin](#css-margin)
+* CSS Padding: [CSS Padding](#css-padding)
+* CSS Font: [CSS Font](#css-fonts)
+...
+<!-- * CSS Text: [CSS Text](#css-text)
+* CSS Box Model: [CSS Box Model](#css-box-model)
+* CSS Display: [CSS Display](#css-display)
+* CSS Position: [CSS Position](#css-position) -->
+CSS pt 2-3: [Responsive Design](#css-responsive-design)
+
 
 CSS is a language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
 
@@ -6,7 +26,7 @@ CSS is designed primarily to enable the separation of document content from docu
 
 CSS can also be applied to any XML document, including plain XML, SVG and XUL. This module will concentrate on HTML and XHTML documents.
 
-#### CSS Syntax
+## CSS Syntax
 
 CSS consists of a series of style rules. Each rule contains a selector and a declaration block. The selector indicates which element the rule applies to. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon.
 
@@ -16,7 +36,7 @@ selector {
 }
 ```
 
-#### CSS Selectors
+## CSS Selector
 
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
 
@@ -60,7 +80,7 @@ div p.intro {
 }
 ```
 
-#### CSS Properties
+## CSS Properties
 
 CSS properties are used to set the style of HTML elements.
 
@@ -420,7 +440,7 @@ p {
 }
 ```
 
-### CSS Responsive Design
+# CSS Responsive Design
 
 Responsive design is a web design approach that makes web pages render well on a variety of devices and window or screen sizes.
 
@@ -468,4 +488,109 @@ Here is an example of media queries:
   }
 }
 ```
+
+### CSS Flexbox
+
+Flexbox is a layout mode in CSS3.
+Flexbox is used to make the layout responsive.
+Flexbox is a one-dimensional layout method for laying out items in rows or columns.
+Flexbox is a good alternative to CSS grid.
+Here is an example of flexbox:
+
+```css
+.container {
+  display: flex;
+  /* display: flex is used to enable flexbox */
+  flex-direction: row;
+  /* flex-direction: row is used to make the flex items are placed in the row direction */
+  flex-wrap: nowrap;
+  /* flex-wrap: nowrap is used to make the flex items are not wrapped */
+  justify-content: flex-start;
+  /* justify-content: flex-start is used to make the flex items are packed toward the start of the flex container */
+  align-items: stretch;
+  /* align-items: stretch is used to make the flex items are stretched to fit the container */
+  align-content: stretch;
+  /* align-content: stretch is used to make the flex lines are stretched to fit the container */
+}
+```
+
+### CSS Grid
+
+CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to any web layout system of the past, completely changes the way we design user interfaces. CSS has always been used to layout our web pages, but it’s never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox is also a very great layout tool, but its one-directional flow has different use cases — and they actually work together quite well! Grid is the very first CSS module created specifically to solve the layout problems
+
+CSS grid is a layout mode in CSS3.
+CSS grid is used to make the layout responsive.
+CSS grid is a two-dimensional layout method for laying out items in rows and columns.
+CSS grid is a good alternative to CSS flexbox.
+
+Here is an example of CSS grid:
+
+```css
+.container {
+  display: grid;
+  /* display: grid is used to enable CSS grid */
+  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50% is used to define the number of columns and the width of the columns */
+  grid-template-rows: 50% 50%;
+  /* grid-template-rows: 50% 50% is used to define the number of rows and the height of the rows */
+  grid-gap: 10px;
+  /* grid-gap: 10px is used to define the gap between the columns and the rows */
+  grid-auto-flow: row;
+  /* grid-auto-flow: row is used to define how auto-placed items are flowed into the grid */
+  grid-auto-columns: 50%;
+  /* grid-auto-columns: 50% is used to define the width of the auto-placed columns */
+  grid-auto-rows: 50%;
+  /* grid-auto-rows: 50% is used to define the height of the auto-placed rows */
+  grid-template-areas: "header header" "main main" "footer footer";
+  /* grid-template-areas: "header header" "main main" "footer footer" is used to define the grid template areas */
+}
+```
+Create a responsive design for desktop, table and mobile screen sizes using CSS Grid
+
+```css
+.container {
+  display: grid;
+  /* display: grid is used to enable CSS grid */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr is used to define the number of columns and the width of the columns */
+  grid-template-rows: 50px 1fr 50px;
+  /* grid-template-rows: 50px 1fr 50px is used to define the number of rows and the height of the rows */
+  grid-gap: 10px;
+  /* grid-gap: 10px is used to define the gap between the columns and the rows */
+  grid-auto-flow: row;
+  /* grid-auto-flow: row is used to define how auto-placed items are flowed into the grid */
+  grid-auto-columns: 1fr;
+  /* grid-auto-columns: 1fr is used to define the width of the auto-placed columns */
+  grid-auto-rows: 1fr;
+  /* grid-auto-rows: 1fr is used to define the height of the auto-placed rows */
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  /* grid-template-areas: "header header header" "main main main" "footer footer footer" is used to define the grid template areas */
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr is used to define the number of columns and the width of the columns */
+    grid-template-rows: 50px 1fr 50px;
+    /* grid-template-rows: 50px 1fr 50px is used to define the number of rows and the height of the rows */
+    grid-template-areas: "header" "main" "footer";
+    /* grid-template-areas: "header" "main" "footer" is used to define the grid template areas */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr is used to define the number of columns and the width of the columns */
+    grid-template-rows: 50px 1fr 50px;
+    /* grid-template-rows: 50px 1fr 50px is used to define the number of rows and the height of the rows */
+    grid-template-areas: "header header" "main main" "footer footer";
+    /* grid-template-areas: "header header" "main main" "footer footer" is used to define the grid template areas */
+  }
+}
+```
+
+what is grid template areas in CSS Grid and which are the values of grid template areas?
+grid template areas is used to define the grid template areas.
+The values of grid template areas are the names of the grid areas.
 
