@@ -564,13 +564,14 @@ Here is an example of CSS grid:
   grid-gap: 10px;
   /* grid-gap: 10px is used to define the gap between the columns and the rows */
   grid-auto-flow: row;
-  /* grid-auto-flow: row is used to define how auto-placed items are flowed into the grid */
+  /* grid-auto-flow: row is used to define how auto-placed items are flowed into the grid*/
   grid-auto-columns: 50%;
   /* grid-auto-columns: 50% is used to define the width of the auto-placed columns */
   grid-auto-rows: 50%;
   /* grid-auto-rows: 50% is used to define the height of the auto-placed rows */
   grid-template-areas: "header header" "main main" "footer footer";
   /* grid-template-areas: "header header" "main main" "footer footer" is used to define the grid template areas */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
 }
 ```
 Create a responsive design for desktop, table and mobile screen sizes using CSS Grid
@@ -617,3 +618,4 @@ Create a responsive design for desktop, table and mobile screen sizes using CSS 
   }
 }
 ```
+
