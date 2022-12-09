@@ -1,0 +1,114 @@
+main article{
+    border: 3px solid black;
+    padding: 24px 48px;
+    margin: 12px;
+    opacity: .9;
+    height: 500vh;
+    /* position: relative; */
+}
+
+.box{
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 166, 0, 1);
+    /* transition-property: background-color;
+    transition-duration: 10s; */
+    /* bottom: 60px;
+    left: 200px;
+    right: 0; */
+
+    transition: width 2s, height 2s, background-color 2s, rotate 3s;
+
+    /* transition: all 1s steps(2000, jump-end); */
+}
+
+.box:hover{
+    /* opacity: 0.5; */
+    background-color: blue;
+    width: 400px;
+    height: 400px !important;
+    /* transform: translate(50px, 100px); */
+}
+.box:active{
+    /* border: 5px dashed blue;
+    width: 150px;
+    height: 100px; */
+}
+
+/* .box:not(italic){
+    border: 5px dashed blue;
+} */
+
+.paragraph-item{
+    border: 1px solid black;
+    padding: 12px;
+}
+
+#selected-p{
+    color: red;
+}
+
+#selected-p::after{
+    content: " Hello CICCC";
+}
+
+#selected-p::before{
+
+    content: " Hello CICCC";
+}
+
+#selected-p::first-letter{
+    color: blue;
+    font-size: 32px;
+}
+
+.title-area h6:nth-of-type(1){
+    /* border: 1px solid black; */
+}
+
+.title-area h6:first-child{
+    /* border: 1px solid black; */
+}
+
+.title-area h6:last-child{
+    /* border: 1px solid black; */
+}
+
+.title-area h6:nth-child(3n+3){
+    border: 1px solid black;
+}
+
+/* article:first-child{
+    color: blue;
+    font-style: italic;
+} */
+
+/* .paragraph-item:not(italic){
+   color: red;
+}
+.paragraph-item:not(strong){
+
+} */
+
+/* .box:first-child{
+    font-size: 32px;
+} */
+
+.checkbox-group{
+    padding: 24px;
+    border: 1px solid black;
+}
+
+/* .checkbox-item{
+   width: 25px;
+   height: 50px;
+} */
+/* .checkbox-item:checked{
+    height: 20px;
+    cursor:alias;
+} */
+
+/* .checkbox-item:first{
+    height: 100px !important;
+} */
