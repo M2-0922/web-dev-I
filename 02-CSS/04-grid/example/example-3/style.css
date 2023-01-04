@@ -1,0 +1,38 @@
+.listing{
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: dense;
+    /* dense is another possible value for the grid-auto-flow property. 
+    When grid-auto-flow is set to dense, the grid will attempt to fill in empty grid cells, 
+    as long as it does not cause any overlapping of items. */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* auto-fill is a keyword that tells the browser to fill the grid with as many columns as possible, */
+    /* minmax(200px, 1fr) is a function that tells the browser to use a minimum width of 200px and a maximum width of 1fr */
+}
+
+.listing li {
+    border: 1px solid #ffe066;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.listing .header{
+    background-color: orange;
+    color: white;
+    padding: 0 12px;
+}
+
+.listing .cta{
+    margin-top: auto;
+    border-top: 1px solid #ffe066;
+    padding: 10px;
+    text-align: center;
+}
+
+.listing .body{
+    padding: 10px;
+}

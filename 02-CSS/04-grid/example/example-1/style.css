@@ -1,0 +1,35 @@
+form {
+    display: grid;
+    /* activate the grid container */
+    grid-template-columns: [label] auto [input] 1fr;
+    /* grid template columns is a shorthand for grid-template-columns, 
+    'label' is a name for the first column, auto is the width of the first column, 
+    'input' is a name for the second column, 1fr is the width of the second column */
+    /* grid-auto-flow: row; */
+    gap: 0.8em;
+    /* gap is a shorthand for row-gap and column-gap */
+    background: #eee;
+    padding: 1.2em;
+}
+/* form > label is a CSS selector that selects all label elements that are direct children of form elements */
+form > label{
+    grid-column: label;
+    /* grid-column is a shorthand for grid-column-start and grid-column-end */
+    grid-row: auto;
+}
+
+form > input, 
+form > textarea, 
+form > button {
+    grid-column: input;
+    grid-row: auto;
+    border: none;
+    padding:0.5em;
+    border-radius: 4px;
+}
+
+form > button {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+}
