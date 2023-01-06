@@ -1,0 +1,14 @@
+// SASS
+$primary-color: #333;
+$secondary-color: #fff;
+
+.header {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+// CSS Output
+.header {
+  background-color: #333;
+  color: #fff;
+}
