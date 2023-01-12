@@ -6,7 +6,9 @@
 //Arrow functions
 
 const greeting = function(name){
+    // function is noname function
     console.log('Hello ' + name)
+    // console.log(`Hello ${name}`) //template literals
 }
 
 const greeting2 = (name) => { 
