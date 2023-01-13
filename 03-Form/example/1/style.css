@@ -1,0 +1,106 @@
+/* Payment - Credit Card Form Modern CSS */
+
+/* General */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 16px;
+  min-width: fit-content;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 24px auto;
+  background: #fff;
+  padding: 12px 30px;
+  border-radius: 5px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-header h1 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #555;
+}
+
+.form-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+.form-agreement, .form-save-card {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-agreement label, .form-save-card label {
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.form-agreement input, .form-save-card input {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(215, 215, 34);
+}
+
+
+.form-group input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.form-group input[type="submit"] {
+  width: 100%;
+  border: none;
+  height: 36px;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover, .form-group input[type="submit"]:focus {
+  background: rgb(122, 122, 224);
+  color: white;
+}
+
+
+
+
+/* Form */
+
