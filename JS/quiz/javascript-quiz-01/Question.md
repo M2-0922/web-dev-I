@@ -26,11 +26,13 @@ function secondIndexOf(s1, s2) {
  // Use indexOf twice.
 }
 ```
-frase = "Initialize a variable";
-function secondIndexOf(s1, s2) {
-    frase.indexOf("ia");
-    return frase.indexOf("ia");
-}
+var secondIndexOf =(s1, s2 ) => {
+
+var firstIndex = s1.indexOf(s2);
+
+return s1.indexOf(s2, firstIndex + 1);
+
+};
 ---
 ###### Question 3:
 Write a function equals that checks two values
@@ -71,6 +73,10 @@ if(age > 18){
 else{
     return "Too young";
 }
+
+OR
+
+if age >18 ? console.log("Old enough") : console.log("Too young"); //Conditional Ternary Operator
 ---
 ###### Question 5:
 Write a function repdigit that determines whether a two-digit
@@ -107,7 +113,7 @@ function unequal(a, b, c) {
 ```
 
 function unequal(a, b, c) {
- return a!==b && b!==c;
+ return a!==b && b!==c && a!==c;
 }
 ---
  
@@ -121,7 +127,8 @@ if (-1 || 0) alert( 'first' );
 if (-1 && 0) alert( 'second' );
 if (null || -1 && 1) alert( 'third' );
 ```
- 
+
+ if (-1 || 0) alert( 'first' );
  if (null || -1 && 1) alert( 'third' );
 ---
  
@@ -144,22 +151,22 @@ Refer to the schema below:
 
 
 
-console.log("Welcome");
+let login = prompt("Who's there?", '');
 
-let user = prompt("Who's there?", "");
+if (login === 'Admin' || login = "admin") {
 
-if (user == "Admin") {
+  let password = prompt('Password?', '');
 
-    let user = prompt("Password?", "");
+  if (password === 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (pass === '' || pass === null) {
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
 
-    if (password === "TheMaster") return "WELCOME";
-    else if (password == "Canceled") return "Canceled";
-    else return "Wrong password"
-
-}
-else if (user == "Cancel") {
-    return "Canceled"
-}
-else {
-    return "Other"
+} else if (login === '' || login === null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
 }
