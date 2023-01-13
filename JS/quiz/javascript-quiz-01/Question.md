@@ -10,6 +10,7 @@ y = x;
 x = z;
 ```
 
+Answer: Tigger
 ---
  
 ###### Question 2:
@@ -25,7 +26,11 @@ function secondIndexOf(s1, s2) {
  // Use indexOf twice.
 }
 ```
- 
+frase = "Initialize a variable";
+function secondIndexOf(s1, s2) {
+    frase.indexOf("ia");
+    return frase.indexOf("ia");
+}
 ---
 ###### Question 3:
 Write a function equals that checks two values
@@ -43,7 +48,15 @@ function equals(a, b) {
  // Return the variable.
 }
 ```
-
+function equals(a, b) {
+ 
+    let comparision = "unequal";
+    if (a === (b)) {
+        return "EQUAL"
+    } else {
+        return comparision
+    }
+}
 ---
 ###### Question 4:
 Write an if/else statement with the following condition:
@@ -51,6 +64,13 @@ Write an if/else statement with the following condition:
 If the variable age is greater than 18, output "Old enough",
 otherwise output "Too young".
 
+let age;
+if(age > 18){
+    return "Old enough";
+}
+else{
+    return "Too young";
+}
 ---
 ###### Question 5:
 Write a function repdigit that determines whether a two-digit
@@ -86,6 +106,9 @@ function unequal(a, b, c) {
 }
 ```
 
+function unequal(a, b, c) {
+ return a!==b && b!==c;
+}
 ---
  
 ###### Question 7:
@@ -99,6 +122,7 @@ if (-1 && 0) alert( 'second' );
 if (null || -1 && 1) alert( 'third' );
 ```
  
+ if (null || -1 && 1) alert( 'third' );
 ---
  
 ###### Question 8:
@@ -117,3 +141,25 @@ For an empty string or cancelled input, show “Canceled”
 Refer to the schema below:
 
 ![flow-chart](./flow-chart.png)
+
+
+
+console.log("Welcome");
+
+let user = prompt("Who's there?", "");
+
+if (user == "Admin") {
+
+    let user = prompt("Password?", "");
+
+    if (password === "TheMaster") return "WELCOME";
+    else if (password == "Canceled") return "Canceled";
+    else return "Wrong password"
+
+}
+else if (user == "Cancel") {
+    return "Canceled"
+}
+else {
+    return "Other"
+}
